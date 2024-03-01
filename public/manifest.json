@@ -1,0 +1,15 @@
+{
+    "name": "Emailz",
+    "description": "The cooler email template thingyjig",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Emailz"
+    },
+    "icons": {
+        "16": "emailzlogo.png",
+        "48": "emailzlogo.png",
+        "128": "emailzlogo.png"
+    }
+}

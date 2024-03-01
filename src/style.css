@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    width: 400px;
+    height: 500px;
+    background-color: #19191d;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.app {
+    padding: 20px;
+}
+
+.awaiting-container {
+    font-size: 14px;
+}
+
+.awaiting-container p {
+    margin: 5px;
+}
+
+.email-templates-title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.email-template {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.email-template-name {
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    height: 25px;
+    margin: 2px 0px;
+}
+
+.email-template-button {
+    background-color: #19191d;
+    border: 1px solid #19191d;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    padding: 0;
+}
+
+.email-template-button:hover {
+    border: 1px solid #2f2f2f;
+}
+
+.email-template-alert {
+    position: absolute;
+    padding: 5px;
+    background-color: #248aff;
+    box-shadow: rgba(30, 106, 254, 0.14) 0px 12px 17px 2px, rgba(30, 106, 254, 0.12) 0px 5px 22px 4px, rgba(30, 106, 254, 0.2) 0px 7px 8px -4px;
+    transform: translateY(-30px);
+    border-radius: 5px;
+    animation-name: float-in;
+    animation-duration: 0.25s;
+}
+
+@keyframes float-in {
+    from { 
+        transform: translateY(0px);
+        opacity: 0%;
+    }
+    50% {
+        transform: translateY(-30px);
+        opacity: 100%;
+    }
+}
+
+.email-template-alert p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.expandable-item-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.expandable-item-title h2 {
+    margin: 0px 0px 3px 0px;
+    cursor: pointer;
+}
+
+.expandable-item-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #19191d;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #19191d;
+    border-radius: 5px;
+    transition: border 0.1s ease;
+    cursor: pointer;
+}
+
+.expandable-item-button svg {
+    transition: rotate 0.1s ease;
+}
+
+.expandable-item-button:hover {
+    border: 1px solid #2f2f2f;
+}
+
+.expandable-item-list {
+    margin-left: 25px;
+}
